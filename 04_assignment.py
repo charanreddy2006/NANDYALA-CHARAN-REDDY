@@ -11,7 +11,7 @@ except FileNotFoundError:
 
 
 #task 2:
-file = open("sample.txt", "w")
+file = open("output.txt", "w")
 n=str(input("Enter text to write to the file: "))
 writing_file = file.write(n)
 print(writing_file)
@@ -19,7 +19,7 @@ print("Data Successfully written to output.txt")
 file.close()
 
 
-file = open("sample.txt", "a")
+file = open("output.txt", "a")
 n=str(input("Enter additional text to append: "))
 appending_file = file.write(n)
 print(appending_file)
@@ -27,7 +27,7 @@ print("Data Successfully appened ")
 file.close()
 
 
-file = open("sample.txt", "r")
+file = open("output.txt", "r")
 reading_file = file.read()
 print(reading_file)
 file.close()
